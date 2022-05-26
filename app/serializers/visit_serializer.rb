@@ -1,3 +1,3 @@
 class VisitSerializer < ActiveModel::Serializer
-  attributes :id, :date
+  attributes :id, :start_date, :end_date, :house_id, :user_id
 end
