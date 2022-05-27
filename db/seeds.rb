@@ -4,11 +4,11 @@ puts "🌱 Seeding spices..."
 
 #create USERS
 puts 'Seeding users..'
-first = User.create(name: Faker::Name.first_name, email: Faker::Internet.email, username: Faker::Internet.username, avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKg2mVZQEjyiI-PJmbuTf42UQv_am3-DBboA&usqp=CAU" )
-second = User.create(name: Faker::Name.first_name, email: Faker::Internet.email, username: Faker::Internet.username, avatar: "https://i.imgur.com/7xktJyjh.jpg" )
-third = User.create(name: Faker::Name.first_name, email: Faker::Internet.email, username: Faker::Internet.username, avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuihFdDZ697HZvoVshamz53_IH9DAc6z89uA&usqp=CAU" )
-fourth = User.create(name: Faker::Name.first_name, email: Faker::Internet.email, username: Faker::Internet.username, avatar: "https://static.wikia.nocookie.net/xbox/images/b/ba/Dragon-gamerpic.jpg/revision/latest/scale-to-width-down/250?cb=20200426103318")
-fifth = User.create(name: Faker::Name.first_name, email: Faker::Internet.email, username: Faker::Internet.username, avatar: "https://preview.redd.it/cm7v4jwetbt21.png?width=640&crop=smart&auto=webp&s=0471c340ed13054160b579ea809ce19dfc1de92f")
+first = User.create(name: Faker::Name.first_name, email: Faker::Internet.email, username: Faker::Internet.username, avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKg2mVZQEjyiI-PJmbuTf42UQv_am3-DBboA&usqp=CAU", password: "123")
+second = User.create(name: Faker::Name.first_name, email: Faker::Internet.email, username: Faker::Internet.username, avatar: "https://i.imgur.com/7xktJyjh.jpg", password: "123" )
+third = User.create(name: Faker::Name.first_name, email: Faker::Internet.email, username: Faker::Internet.username, avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuihFdDZ697HZvoVshamz53_IH9DAc6z89uA&usqp=CAU", password: "123" )
+fourth = User.create(name: Faker::Name.first_name, email: Faker::Internet.email, username: Faker::Internet.username, avatar: "https://static.wikia.nocookie.net/xbox/images/b/ba/Dragon-gamerpic.jpg/revision/latest/scale-to-width-down/250?cb=20200426103318", password: "123")
+fifth = User.create(name: Faker::Name.first_name, email: Faker::Internet.email, username: Faker::Internet.username, avatar: "https://preview.redd.it/cm7v4jwetbt21.png?width=640&crop=smart&auto=webp&s=0471c340ed13054160b579ea809ce19dfc1de92f", password: "123")
 
 
 # create HOUSES
