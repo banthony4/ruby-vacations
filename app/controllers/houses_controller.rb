@@ -1,7 +1,7 @@
 class HousesController < ApplicationController
 
   def index
-    render json: house.all, status: :ok
+    render json: House.all, status: :ok
   end
 
   def show
