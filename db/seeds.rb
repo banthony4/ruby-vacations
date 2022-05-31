@@ -30,6 +30,11 @@ house12 = House.create(name: "Fishermans Cave", location: "Florida Coast" , desc
 
 puts 'Seeding Reviews..'
 Review.create(content: "I absolutely loved the weather!", rating: 5, user_id: first.id, house_id: house1.id)
+Review.create(content: "I absolutely loved the weather!", rating: 4, user_id: first.id, house_id: house1.id)
+Review.create(content: "I absolutely loved the weather!", rating: 2, user_id: first.id, house_id: house1.id)
+Review.create(content: "I absolutely loved the weather!", rating: 1, user_id: first.id, house_id: house1.id)
+Review.create(content: "I absolutely loved the weather!", rating: 4, user_id: first.id, house_id: house1.id)
+Review.create(content: "I absolutely loved the weather!", rating: 5, user_id: first.id, house_id: house1.id)
 Review.create(content: "I absolutely loved the weather!", rating: 5, user_id: first.id, house_id: house2.id)
 Review.create(content: "I absolutely loved the weather!", rating: 5, user_id: fourth.id, house_id: house3.id)
 Review.create(content: "I absolutely loved the weather!", rating: 5, user_id: first.id, house_id: house4.id)

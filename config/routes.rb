@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   resources :houses
   resources :users
 
+  get '/authorized_user', to: 'users#show'
+
   post '/login', to: 'sessions#login'
   delete '/logout', to: 'sessions#logout'
 
