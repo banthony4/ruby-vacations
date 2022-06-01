@@ -6,7 +6,7 @@ class HousesController < ApplicationController
 
   def show
     house = House.find(params[:id])
-    render json: house, status: :ok
+    render json: house, serializer: HouseReviewsSerializer, status: :ok
   end
 
   def create

@@ -29,27 +29,26 @@ house12 = House.create(name: "Fishermans Cave", location: "Florida Coast" , desc
 #create REVIEWS
 
 puts 'Seeding Reviews..'
-Review.create(content: "I absolutely loved the weather!", rating: 5, user_id: first.id, house_id: house1.id)
-Review.create(content: "I absolutely loved the weather!", rating: 4, user_id: first.id, house_id: house1.id)
-Review.create(content: "I absolutely loved the weather!", rating: 2, user_id: first.id, house_id: house1.id)
-Review.create(content: "I absolutely loved the weather!", rating: 1, user_id: first.id, house_id: house1.id)
-Review.create(content: "I absolutely loved the weather!", rating: 4, user_id: first.id, house_id: house1.id)
-Review.create(content: "I absolutely loved the weather!", rating: 5, user_id: first.id, house_id: house1.id)
-Review.create(content: "I absolutely loved the weather!", rating: 5, user_id: first.id, house_id: house2.id)
-Review.create(content: "I absolutely loved the weather!", rating: 5, user_id: fourth.id, house_id: house3.id)
-Review.create(content: "I absolutely loved the weather!", rating: 5, user_id: first.id, house_id: house4.id)
-Review.create(content: "I absolutely loved the weather!", rating: 5, user_id: second.id, house_id: house5.id)
-Review.create(content: "I absolutely loved the weather!", rating: 5, user_id: second.id, house_id: house6.id)
-Review.create(content: "I absolutely loved the weather!", rating: 5, user_id: second.id, house_id: house7.id)
-Review.create(content: "I absolutely loved the weather!", rating: 5, user_id: third.id, house_id: house8.id)
-Review.create(content: "I absolutely loved the weather!", rating: 5, user_id: third.id, house_id: house9.id)
-Review.create(content: "I absolutely loved the weather!", rating: 5, user_id: fourth.id, house_id: house10.id)
-Review.create(content: "I absolutely loved the weather!", rating: 5, user_id: fifth.id, house_id: house11.id)
-Review.create(content: "I absolutely loved the weather!", rating: 5, user_id: fifth.id, house_id: house12.id)
+100.times do 
+  Review.create(
+    content: Faker::Lorem.sentence,
+    rating: rand(1..5),
+    user_id: rand(1..User.all.size),
+    house_id: rand(1..House.all.size),
+  )
+end
 
 
-# puts 'Seeding Visits..'
+puts 'Seeding Visits..'
 # Visit.create(date: "12/12/2020", user_id:second.id, house_id: house7.id)
+100.times do 
+  Visit.create(
+    start_date: Faker::Date.between(from: '2020-01-01', to: '2022-05-31'),
+    end_date: Faker::Date.between(from: '2020-01-01', to: '2022-05-31'),
+    user_id: rand(1..User.all.size),
+    house_id: rand(1..House.all.size),
+  )
+end
 
 
 puts "✅ Done seeding!"
