@@ -27,7 +27,7 @@ class VisitsController < ApplicationController
   private
 
   def visit_params
-    params.permit(:date, :house_id, :user_id)
+    params.permit(:date, :house_id, :user_id, :start_date, :end_date)
   end
 
 end
