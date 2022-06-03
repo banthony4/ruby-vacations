@@ -24,6 +24,11 @@ class VisitsController < ApplicationController
     head :no_content
   end
 
+  def user_visits
+    current_user_visits = Visit.joins(:user).where(:user => {:id => params[:id]})
+    render json: current_user_visits
+  end
+
   private
 
   def visit_params
