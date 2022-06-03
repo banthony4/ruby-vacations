@@ -24,6 +24,11 @@ class ReviewsController < ApplicationController
     head :no_content
   end
 
+  def user_reviews
+    current_user_reviews = Review.joins(:user).where(:user => {:id => params[:id]})
+    render json: current_user_reviews
+  end
+
   private
 
   def review_params
