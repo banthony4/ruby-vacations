@@ -1,5 +1,5 @@
 class HouseReviewsSerializer < ActiveModel::Serializer
-  attributes :id, :location, :description, :image, :avg_rating
+  attributes :id, :location, :description, :image, :avg_rating, :name
   has_many :reviews
   
   def avg_rating
