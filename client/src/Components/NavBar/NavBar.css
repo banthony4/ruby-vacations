@@ -1,0 +1,132 @@
+/* @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.nav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    /* width: 265px; Set the width of the sidebar */
+    /* position: fixed; */
+    /* z-index: 1; Stay on top */
+    /* top: 0; Stay at the top */
+    /* left: 0; */
+    /* background-color: rgb(181, 8, 8); Black */
+    /* overflow-x: hidden; Disable horizontal scroll */
+    /* overflow-y: auto;
+    padding-top: 30px; */
+    /* padding-left: 20px; */
+    /* background: linear-gradient(-45deg, white, #e73c7e, red, white); */
+	/* background-size: 350% 100%; */
+	/* animation: gradient 15s ease infinite; */
+	/* height: 520h; */
+    /* opacity: 95%; */
+/* } */ 
+
+.nav {
+    width: 280px; /* Set the width of the sidebar */
+    position: fixed;
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #31525b; 
+    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-y: auto;
+    padding-top: 30px;
+    height: 100vh;
+    border-right: 10px solid white;
+}
+.logo-div{
+    display: block;
+    margin: auto;
+}
+.Nav-logo {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 90%;
+}
+
+.links-div {
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.nav-links {
+    padding: 10px 15px 10px 15px;
+    margin-left: 5px;
+    font-family: 'Sofia', sans-serif;
+    color: white;
+    font-size: 22px;
+    opacity: 75%;
+    background-image: linear-gradient(
+    to right,
+    black,
+    black 50%,
+    white 50%
+    );
+    background-size: 200% 100%;
+    background-position: 100%;
+    display:inline-block;
+    padding: 15px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-links:before {
+    /* content: '';
+  background: none;
+  /* display: block;
+  position: absolute; */
+  /* bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;  */
+  /* transition: all 0.3s ease-in-out;
+  width:100%; */
+}
+
+.navLogoutDiv{
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+.navLogout{
+    position:relative;
+    padding:10px 20px;
+    background: #fae6b1;
+    font-family: 'Sofia', sans-serif;
+    font-size:22px;
+    border-radius:10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    box-shadow: inset 0 0 0 0 #ffa101;
+    color: #31525b;
+    margin: 0 -.25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    opacity: 90%;
+}
+
+.navLogout:hover {
+    cursor: pointer;
+    /* font-family: fantasy; */
+    box-shadow: inset 150px 0 0 0 #ffa101;
+    color: #fae6b1;
+    opacity: 90%;
+    
+}
+
+.nav-links:hover {
+    background-position: 0;
+    opacity: 100%;
+    /* font-family: fantasy; */
+    
+}

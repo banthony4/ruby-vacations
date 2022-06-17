@@ -1,0 +1,107 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap'); */
+
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    40% {
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+  
+    80% {
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes para {
+	100% {
+		background-position: 
+			-5000px 20%,
+			-800px 95%,
+			500px 50%,
+			1000px 100%,
+			400px 0;
+		}
+	}
+
+    .login-signup-page{
+        height: 100%;
+        /* max-height: 600px; */
+        width: 100%;
+        background-color: rgb(30, 177, 231);
+        background-image:		
+            /* url('https://78.media.tumblr.com/cae86e76225a25b17332dfc9cf8b1121/tumblr_p7n8kqHMuD1uy4lhuo1_540.png'),  */
+            url('https://78.media.tumblr.com/66445d34fe560351d474af69ef3f2fb0/tumblr_p7n908E1Jb1uy4lhuo1_1280.png'),
+            url('https://78.media.tumblr.com/cae86e76225a25b17332dfc9cf8b1121/tumblr_p7n8kqHMuD1uy4lhuo1_540.png'),
+            url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'),
+            url('https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png'),
+            url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png');
+        background-repeat: repeat-x;
+        background-position: 
+            0 20%,
+            0 100%,
+            0 50%,
+            0 100%,
+            0 0;
+        background-size: 
+            2500px,
+            800px,
+            500px 200px,
+            1000px,
+            400px 260px;
+        animation: 750s para infinite linear;
+        }
+ 
+.login-signup-page {
+    text-align: center;
+    font-family: 'Sofia', sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+ 
+.login-header{
+    font-family: 'Oswald', sans-serif;
+    color: red
+}
+
+.login-button:hover {
+    color:rgb(24, 116, 187);
+    border: 3px solid rgb(24, 116, 187);
+    animation: bounce 1s;
+}
+
+.signup-button:hover {
+    color:rgb(24, 116, 187);
+    border: 3px solid rgb(24, 116, 187);
+    animation: bounce 1s;
+}
+ 
+.forms-div {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.login-form-div{
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+.login-logo-div {
+    background-color: rgba(29, 46, 58, 0.8);
+    border-radius: 50%;
+    border: 4px dashed rgba(255, 255, 255, 0.56);
+}
+
+.login-logo {
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+    border-top-left-radius:10px;
+    border-bottom-right-radius:10px;;
+    opacity: 90%
+}

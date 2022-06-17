@@ -1,0 +1,53 @@
+.outer-div {
+    height: 100vh;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.profile-card {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 2.5rem; 
+    background-image: url(/src/Components/assets/circle-background.png);  
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;  
+    font-family: 'Sofia', sans-serif;
+    width: 50vw;
+}
+
+.profile-content {
+    display: flex;  
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    
+}
+
+.profile-picture {
+    width: 10rem; 
+    height: 10rem;
+    border: 2px solid #ffa101;
+    border-radius: 50%; 
+}
+
+.profile-name {
+    margin-top: 1.25rem; 
+    color: #31525b; 
+    font-size: xx-large;
+}
+
+.profile-username {
+    color: #31525b; 
+    font-size: x-large;
+    line-height: 1.25rem; 
+}
+
+.profile-email {
+    padding: 1rem; 
+    color: #31525b; 
+    font-size: 0.875rem;
+    line-height: 1.25rem; 
+    text-align: center; 
+}

@@ -1,0 +1,23 @@
+.name{
+  text-align: center;
+  /* margin-right: -35rem; */
+} 
+.information{
+  display: flex;
+  flex-direction: row;
+}
+.booking{
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+.details{
+  width: 20rem;
+  margin-left: 5rem;
+}
+.book-visit{
+  margin-left: 10rem;
+}
+.rev-stars{
+  border-right: 2px solid black;
+}
